@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 :root {
   --color-1: #242786;
@@ -20,6 +20,8 @@ nav {
   padding: 0px 20px;
   background-color: var(--color-1);
   border-bottom: 1px solid var(--color-6);
+  margin-left: 400px;
+  margin-right:400px;
 }
 nav a {
   color: var(--color-2);
@@ -116,7 +118,7 @@ section .form {
   flex-grow: 1;
 }
 .text_container h3 {
-  text-align: left;
+ text-align: left;
 }
 
 .home_container {
@@ -126,6 +128,10 @@ section .form {
   overflow: hidden;
   height: calc(100vh - 70px);
   width: 100vw;
+  margin-left: 400px;
+  margin-right: 400px;
+  
+
 }
 .users_container {
   margin-top: 10px;
@@ -168,7 +174,7 @@ section .form {
 }
 .messages_container {
   position: relative;
-  width: 100%;
+  width: 40%;
 }
 .messages_user {
   padding: 10px;
@@ -183,17 +189,18 @@ section .form {
 .message_form {
   position: absolute;
   bottom: 0;
-  left: 20%;
-  width: 100%;
+  left: 5%;
+  width: 60%;
   height: 30px;
   display: flex;
   align-items: center;
+
 }
 .message_form input {
-  width: 40vw;
+  width: 25vw;
   margin: 0px 10px 10px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 30px;
   outline: none;
   border: none;
 }

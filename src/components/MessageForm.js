@@ -1,11 +1,12 @@
 import React from "react";
 import Attachment from "./svg/Attachment";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const MessageForm = ({ handleSubmit, text, setText, setImg }) => {
   return (
     <form className="message_form" onSubmit={handleSubmit}>
       <label htmlFor="img">
-        <Attachment />
+        <Attachment style={{ backgroundColor: "white" }} />
       </label>
       <input
         onChange={(e) => setImg(e.target.files[0])}
@@ -23,7 +24,9 @@ const MessageForm = ({ handleSubmit, text, setText, setImg }) => {
         />
       </div>
       <div>
-        <button className="btn">Send</button>
+        <button className="btn">
+          <FaTelegramPlane />
+        </button>
       </div>
     </form>
   );
